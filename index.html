@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      width="device-width,"
+      initial-scale="1.0,"
+      maximum-scale="1.0,"
+      user-scalable="0"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .level-div {
+        position: absolute;
+        top: 530px;
+        left: 15px;
+      }
+
+      .tail-div {
+        position: absolute;
+        top: 560px;
+        left: 15px;
+      }
+
+      .ai-div {
+        position: absolute;
+        top: 590px;
+        left: 15px;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
+    <script src="globals.js"></script>
+    <script src="utils.js"></script>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="ai/snake.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="level-div">
+      <label for="level-input">Level: </label>
+      <input id="level-input" value="9" />
+    </div>
+    <div class="tail-div">
+      <label for="tail-size">Tail starting size: </label>
+      <input id="tail-size" value="7" />
+    </div>
+    <div class="ai-div">
+      <label for="ia-play">Let the AI play: </label>
+      <input type="checkbox" id="ia-play" checked />
+    </div>
+  </body>
+</html>
